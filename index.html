@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Tester</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>WebSocket Tester</h1>
+        
+        <div id="connectionStatus" class="status disconnected">
+            Disconnected
+        </div>
+
+        <div>
+            <input type="text" id="ipAddress" placeholder="ESP8266 IP Address" value="192.168.1.">
+            <button onclick="connect()" id="connectButton">Connect</button>
+        </div>
+
+        <div id="messageLog"></div>
+
+        <div>
+            <input type="text" id="messageInput" placeholder="Enter message" disabled>
+            <button onclick="sendMessage()" id="sendButton" disabled>Send</button>
+        </div>
+    </div>
+</body>
+</html>
